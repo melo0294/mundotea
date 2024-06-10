@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotina Visual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1 class="title">Rotina Visual para Crianças Autistas</h1>
+            <p>Monte a rotina visual do dia de forma rápida e intuitiva.</p>
+        </header>
+        <main>
+            <section id="tarefas-disponiveis">
+                <h2>Tarefas Disponíveis</h2>
+                <div class="cards">
+                    <div class="card" draggable="true" data-tarefa="Arrumar a cama">Arrumar a cama</div>
+                    <div class="card" draggable="true" data-tarefa="Tomar café">Tomar café</div>
+                    <div class="card" draggable="true" data-tarefa="Escovar os dentes">Escovar os dentes</div>
+                    <div class="card" draggable="true" data-tarefa="Ir para a escola">Ir para a escola</div>
+                    <div class="card" draggable="true" data-tarefa="Almoçar">Almoçar</div>
+                    <div class="card" draggable="true" data-tarefa="Tomar banho">Tomar banho</div>
+                </div>
+            </section>
+            <section id="rotina-do-dia">
+                <h2>Rotina do Dia</h2>
+                <div class="cards" id="rotina">
+                    <!-- Tarefas serão adicionadas aqui -->
+                </div>
+            </section>
+        </main>
+        <footer>
+            <button id="print-routine">Imprimir</button>
+        </footer>
+    </div>
+
+    <!-- Script personalizado -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
